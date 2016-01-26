@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">TrevsDemo</string>
+    <string name="github_rest_url">https://api.github.com/users/</string>
+    <string name="hello_blank_fragment">Fill me with data</string>
 </resources>
