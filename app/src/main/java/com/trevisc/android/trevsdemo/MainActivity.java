@@ -95,7 +95,6 @@ public class MainActivity extends AppCompatActivity {
                 if(node != null) {
 
                     if (node.isArray()) {
-                        ArrayNode arrayNode = objectMapper.createArrayNode();
                         Iterator<JsonNode> elementsIterator = ((ArrayNode) node).elements();
                         while (elementsIterator.hasNext()){
                             Repo thisRepo = new Repo();
@@ -111,6 +110,7 @@ public class MainActivity extends AppCompatActivity {
             } catch (IOException e) {
                 System.out.println("error");
             }
+
             AttachDataToListview();
             finalResult.setText("Load Complete");
         }
