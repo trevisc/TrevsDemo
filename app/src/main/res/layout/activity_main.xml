@@ -4,9 +4,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity" >
-
+    <include android:id="@+id/repo_list" layout="@layout/git_hub_repos"/>
 <TextView
-    android:id="@+id/tv_gitid"
+    android:id="@+id/gitid"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:layout_alignParentLeft="true"
@@ -17,26 +17,27 @@
     android:textColor="#444444"
     android:textSize="10pt"/>
 <EditText
-android:id="@+id/in_time"
+android:id="@+id/git_id"
 android:layout_width="150dip"
 android:layout_height="wrap_content"
-android:layout_alignTop="@id/tv_gitid"
-android:layout_toRightOf="@id/tv_gitid"
+android:layout_alignTop="@id/gitid"
+android:layout_toRightOf="@id/gitid"
 android:background="@android:drawable/editbox_background"
     />
 <Button
-android:id="@+id/btn_run"
+android:id="@+id/btnfetch"
 android:layout_width="wrap_content"
 android:layout_height="wrap_content"
-android:layout_below="@+id/in_time"
+android:layout_below="@+id/git_id"
 android:layout_centerHorizontal="true"
-android:layout_marginTop="64dp"
+android:layout_marginTop="20dp"
 android:text="Get List Of GitHub Repos" />
 <TextView
-android:id="@+id/tv_result"
+android:id="@+id/finalresult"
 android:layout_width="wrap_content"
 android:layout_height="wrap_content"
-android:layout_below="@+id/btn_run"
+android:layout_below="@+id/btnfetch"
 android:layout_centerHorizontal="true"
 android:textSize="7pt" />
+
     </RelativeLayout>
